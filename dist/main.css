@@ -243,7 +243,7 @@ img {
 }
 
 .banner {
-  background-image: url("../../images/bg-intro-mobile.svg");
+  background-image: url("./../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -254,7 +254,7 @@ img {
 }
 @media only screen and (min-width: 992px) {
   .banner {
-    background-image: url("../images/bg-intro-desktop.svg");
+    background-image: url("./../images/bg-intro-desktop.svg");
     /* background-position: 600px -150px;
     background-size: 80%; */
     background-position: 26rem -100px;
