@@ -162,8 +162,10 @@
 
   @include for-desktop {
     background-image: url("../images/bg-intro-desktop.svg");
-    background-position: 600px -150px;
-    background-size: 80%;
+    /* background-position: 600px -150px;
+    background-size: 80%; */
+    background-position: 26rem -100px;
+    background-size: 80rem;
     padding-top: 13rem;
     padding-bottom: 10rem;
     padding: 20rem 1.5rem 10rem;
