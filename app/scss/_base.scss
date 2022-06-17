@@ -1,0 +1,150 @@
+// --- Google Font --- //
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+/* ******************* VARIABLES ******************** */
+:root {
+  --header-height: 5rem;
+  @media screen and (max-width: 799px) {
+    --header-height: 3.75rem;
+  }
+
+  // -------- Colors --------
+  // Main
+  --primary-color-first: hsl(136, 65%, 51%);
+  --primary-color-second: hsl(192, 70%, 51%);
+  --secondary-color: hsl(233, 26%, 24%);
+
+  // Neutral
+  --text-color: hsl(233, 8%, 62%);
+  --gray-color: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+
+  // Gradient
+  --gradient-to-right: linear-gradient(
+    to right,
+    var(--primary-color-first),
+    var(--primary-color-second)
+  );
+
+  --gradient-to-right-bottom: linear-gradient(
+    to right-bottom,
+    var(--primary-color-first),
+    var(--primary-color-second)
+  );
+
+  // -------- Font and typography: --------
+  --body-font: "Public Sans", sans-serif;
+
+  --big-font-size: 3rem;
+  --h1-font-size: 2.3rem;
+  --h2-font-size: 1.8rem;
+  --h3-font-size: 1.25rem;
+  --h4-font-size: 0.9rem;
+  --normal-font-size: 1.125rem;
+  // --small-font-size:
+  // --smaller-font-size:
+  @media screen and (max-width: 799px) {
+    --normal-font-size: 1rem;
+  }
+
+  // Font weight:
+  --font-light: 300;
+  --font-regular: 400;
+  --font-bold: 700;
+
+  // -------- Margines bottom --------
+  --mb-0-25: 0.25rem; //4px
+  --mb-0-5: 0.5rem; //8px
+  --mb-0-75: 0.75rem; //12px
+  --mb-1: 1rem; //16px
+  --mb-1-25: 1.25rem; //20px
+  --mb-1-5: 1.5rem; //24px
+  --mb-2: 2rem; //32px
+  --mb-2-25: 2.25rem; //36px
+  --mb-2-5: 2.5rem; //40px
+  --mb-3: 3rem; //48px
+  --mb-3-5: 3.5rem; //56px
+
+  // -------- z-index --------
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* ******************* BASE ******************** */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  background-color: var(--very-light-gray);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@mixin for-phone {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@mixin for-tablet {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin for-landscape {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@mixin for-desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@mixin for-large-desktop {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
