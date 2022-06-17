@@ -24,5 +24,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/frontend-mentor-easybank-landing-page-html-css-js-Il0qD72u_E)
-- Live Site URL: [Add live site URL here](https://rafalkrawczuk.github.io/Frontend-Mentor-Easybank-landing-page-HTML-CSS-JS/)
+- Solution URL: [LINK](https://www.frontendmentor.io/solutions/frontend-mentor-easybank-landing-page-html-css-js-Il0qD72u_E)
+- Live Site URL: [LINK](https://rafalkrawczuk.github.io/Frontend-Mentor-Easybank-landing-page-HTML-CSS-JS/)
